@@ -1,0 +1,93 @@
+# Бюро совершенства — Правила разработки
+
+## Технологический стек
+
+- **Frontend:** Vanilla HTML5, CSS3, JavaScript (ES6+)
+- **Стили:** CSS Variables, Flexbox, Grid
+- **Шрифты:** Google Fonts (Montserrat, Playfair Display)
+- **Иконки:** Font Awesome или SVG
+- **Хостинг:** GitHub Pages (только статика)
+
+## Архитектура проекта
+
+```
+businessBuro/
+├── index.html          # Главная страница (landing)
+├── styles.css          # Основные стили
+├── script.js           # Интерактивность
+├── assets/             # Картинки, шрифты, иконки
+│   ├── founder.jpg
+│   └── ...
+└── README.md
+```
+
+## Правила разработки
+
+### 1. HTML
+- Семантические теги (`<header>`, `<section>`, `<article>`, `<footer>`)
+- BEM-нотация для классов (`.block__element--modifier`)
+- Meta-теги для SEO (title, description, viewport, OpenGraph)
+- Alt-тексты для всех изображений
+
+### 2. CSS
+- CSS Variables в `:root` для цветов и отступов
+- Mobile-first подход (media queries: `@media (min-width: 768px)`)
+- Поддержка: Chrome, Safari, Firefox последних 2 версий
+- Не использовать `!important` без крайней необходимости
+- Анимации только через `transform` и `opacity` (GPU-accelerated)
+
+### 3. JavaScript
+- Чистый JS без фреймворков
+- DOM-манипуляции минимальны
+- Обработчики событий через `addEventListener`
+- Debounce для resize/scroll событий
+
+### 4. Git workflow
+- **main** — продакшн (автодеплой на GitHub Pages)
+- **develop** — разработка
+- Фичи в отдельных ветках: `feat/название`
+- Коммиты по conventional commits:
+  - `feat:` новая фича
+  - `fix:` исправление бага
+  - `style:` CSS/форматирование
+  - `refactor:` рефакторинг без новых фич
+  - `docs:` документация
+
+### 5. GitHub Pages ограничения
+- ✅ Работает: HTML, CSS, JS, изображения
+- ❌ Не работает: PHP, Node.js, базы данных, формы без сторонних сервисов
+- Для форм: использовать Formspree, Google Forms или Netlify Forms
+
+## Дизайн-гайд
+
+### Цвета
+- Primary: `#000000` (чёрный для текста)
+- Background: `#FFFFFF` (белый)
+- Accent: `#C9A96E` (золотой/бежевый)
+- Secondary: `#F5F5F5` (светло-серый для фона секций)
+
+### Типографика
+- Заголовки: `font-family: 'Playfair Display', serif;`
+- Текст: `font-family: 'Montserrat', sans-serif;`
+- Размеры: 48px/32px/24px/18px/16px
+
+### Отступы
+- Section padding: `80px 0` (desktop), `40px 0` (mobile)
+- Container max-width: `1200px`
+- Grid gap: `30px`
+
+## Чек-лист перед деплоем
+
+- [ ] Проверить на мобильном (Chrome DevTools)
+- [ ] Все картинки оптимизированы (< 200KB)
+- [ ] Нет console.errors
+- [ ] Кнопки и ссылки работают
+- [ ] GitHub Pages Settings: Source = main, /(root)
+- [ ] Подождать 2 минуты после push
+
+## Контакты для правок
+
+**Заказчик:** Бюро совершенства (Alina Vezenicheva)
+**Девелопер:** @dannniluk
+**Репозиторий:** https://github.com/dannniluk/businessBuro
+**Сайт:** https://dannniluk.github.io/businessBuro/
