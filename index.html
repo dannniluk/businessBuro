@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Бюро совершенства by Alina Vezenicheva</title>
+    <title>Бюро совершенства by Alina Vezenicheva | Luxury Edition</title>
     <meta
       name="description"
       content="Бизнес-завтраки и обучающие встречи для косметологов. Комьюнити роста, маркетинга и красоты." />
@@ -15,6 +15,28 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Liquid Background Effect -->
+    <div class="liquid-bg">
+      <div class="liquid-blob liquid-blob-1"></div>
+      <div class="liquid-blob liquid-blob-2"></div>
+      <div class="liquid-blob liquid-blob-3"></div>
+      <div class="liquid-blob liquid-blob-4"></div>
+    </div>
+    
+    <!-- Liquid Wave at Bottom -->
+    <div class="liquid-wave">
+      <svg viewBox="0 0 1440 200" preserveAspectRatio="none">
+        <path fill="rgba(111, 29, 27, 0.03)" d="M0,100 C360,150 720,50 1080,100 C1260,125 1380,100 1440,80 L1440,200 L0,200 Z">
+          <animate attributeName="d" 
+            dur="10s" 
+            repeatCount="indefinite"
+            values="M0,100 C360,150 720,50 1080,100 C1260,125 1380,100 1440,80 L1440,200 L0,200 Z;
+                    M0,120 C360,80 720,130 1080,80 C1260,55 1380,80 1440,100 L1440,200 L0,200 Z;
+                    M0,100 C360,150 720,50 1080,100 C1260,125 1380,100 1440,80 L1440,200 L0,200 Z"/>
+        </path>
+      </svg>
+    </div>
+    
     <div class="noise"></div>
     <div class="glow"></div>
 
@@ -26,7 +48,7 @@
           <p class="brand__name">Бюро совершенства</p>
         </div>
       </div>
-        <a class="button button--ghost" href="https://t.me/alinavezenicheva">Telegram</a>
+        <a class="button button--ghost magnetic" href="https://t.me/alinavezenicheva">Telegram</a>
     </header>
 
     <main>
@@ -41,8 +63,8 @@
             Атмосфера поддержки, обмен кейсами и стильный нетворкинг.
           </p>
           <div class="hero__actions">
-            <a class="button" href="https://t.me/alinavezenicheva">Вступить в сообщество</a>
-            <a class="button button--ghost nav-link-hover" href="#events">Ближайшие встречи</a>
+            <a class="button magnetic" href="https://t.me/alinavezenicheva">Вступить в сообщество</a>
+            <a class="button button--ghost nav-link-hover magnetic" href="#events">Ближайшие встречи</a>
           </div>
           <div class="hero__meta">
             <span>Женское PRO‑сообщество</span>
@@ -50,7 +72,7 @@
           </div>
         </div>
         <span class="hero__bridge" aria-hidden="true"></span>
-        <div class="hero__visual">
+        <div class="hero__visual parallax-container">
           <div class="founder-card">
             <img
               class="founder-photo"
@@ -136,17 +158,17 @@
           <div class="event-row">
             <span class="event__meta">СКОРО · ЗАГЛУШКА</span>
             <span class="event__title">Beauty Breakfast: Маркетинг с заботой</span>
-            <a class="event__link" href="https://t.me/alinavezenicheva">Участвовать</a>
+            <a class="event__link magnetic" href="https://t.me/alinavezenicheva">Участвовать</a>
           </div>
           <div class="event-row">
             <span class="event__meta">СКОРО · ЗАГЛУШКА</span>
             <span class="event__title">Стратегия роста косметолога</span>
-            <a class="event__link" href="https://t.me/alinavezenicheva">Участвовать</a>
+            <a class="event__link magnetic" href="https://t.me/alinavezenicheva">Участвовать</a>
           </div>
           <div class="event-row">
             <span class="event__meta">СКОРО · ЗАГЛУШКА</span>
             <span class="event__title">Юридическая безопасность в бьюти</span>
-            <a class="event__link" href="https://t.me/alinavezenicheva">Участвовать</a>
+            <a class="event__link magnetic" href="https://t.me/alinavezenicheva">Участвовать</a>
           </div>
         </div>
       </section>
@@ -194,10 +216,10 @@
           <h2>Теплые моменты наших завтраков</h2>
         </div>
         <div class="gallery">
-          <div class="gallery__large"></div>
+          <div class="gallery__large img-reveal"></div>
           <div class="gallery__stack">
-            <div class="frame"></div>
-            <div class="frame"></div>
+            <div class="frame img-reveal"></div>
+            <div class="frame img-reveal"></div>
           </div>
         </div>
         <div class="quote-list">
@@ -216,7 +238,7 @@
           </p>
         </div>
         <div class="join__actions">
-          <a class="button" href="https://t.me/alinavezenicheva">Перейти в Telegram</a>
+          <a class="button magnetic" href="https://t.me/alinavezenicheva">Перейти в Telegram</a>
           <p class="join__note">Быстрый ответ и личное сопровождение.</p>
         </div>
       </section>
@@ -228,7 +250,7 @@
         <p class="footer__note">Beauty • Marketing • Community</p>
       </div>
       <div class="footer__actions">
-        <a class="button button--ghost" href="https://t.me/alinavezenicheva">Telegram</a>
+        <a class="button button--ghost magnetic" href="https://t.me/alinavezenicheva">Telegram</a>
       </div>
     </footer>
 
